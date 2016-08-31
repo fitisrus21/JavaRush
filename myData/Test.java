@@ -18,6 +18,7 @@ public class Test
         test[3] = 2323;
         test[4] = 1011;
         /// не работает!!!!вапвапва
+        ///новый коммент
 
         ArrayList<Integer> array1 = new ArrayList<>();
         array1.toArray(test);
