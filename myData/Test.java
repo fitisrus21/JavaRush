@@ -20,38 +20,35 @@ public class Test
         /// не работает!!!!вапвапва
         ///новый коммент
 
-        ArrayList<Integer> array1 = new ArrayList<>();
-        array1.toArray(test);
-        array1.add(5);
-
-
-
-        for (Integer x : array1)
+        for (int i = 0; i <5 ; i++)
         {
-            System.out.println(x);
+            System.out.println(test[i]);
         }
-        System.out.println(array1.size());
-
-       // System.out.println(test.length);
-
-
-    }
-
-
-
-    public ArrayList<Integer> toArray(Integer[] test1)
+/*
+    public ArrayList<Integer> toArray(Integer[] test)
     {
         ArrayList<Integer> array = new ArrayList<>();
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 5; i++) ;
         {
-            array.add(test1[i]);
-            System.out.println("ntcn");
+            array.add(test[i]);
         }
 
-        return array;
+
     }
+*/        ArrayList<Integer> array1 = new ArrayList<>();
 
 
+
+      for (int i = 0; i <array1.size() ; i++)
+        {
+            System.out.print(array1.get(i) + " ");
+
+        }
+
+    // System.out.println(test.length);
 
 
 }
+}
+
+
