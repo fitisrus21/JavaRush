@@ -11,12 +11,14 @@ public class Test
 {
     public static void main(String[] args)
     {
-        Integer[] test = new Integer[5];
+        Integer[] test = new Integer[7];
         test[0] = 6;
         test[1] = 7;
         test[2] = 8;
         test[3] = 2323;
         test[4] = 1011;
+        test[5] = 5;
+        test[6] = 1;
         /// не работает!!!!вапвапва
         ///новый коммент
 
@@ -35,7 +37,31 @@ public class Test
 
 
     }
-*/        ArrayList<Integer> array1 = new ArrayList<>();
+*/
+        int temp =test[0];
+        for (int i = 0; i <test.length-1 ; i++)
+        {
+
+            for (int j = i +1; j <test.length ; j++)
+            {
+
+                if (test[i] > test[j])
+                {test[j] = temp;
+
+                    test[j] = test[i];
+                    test[i] = temp;
+
+                }
+            }
+
+        }
+
+        for (int i = 0; i <test.length ; i++)
+        {
+            System.out.print(test[i] + " ");
+        }
+
+        ArrayList<Integer> array1 = new ArrayList<>();
 
 
 
